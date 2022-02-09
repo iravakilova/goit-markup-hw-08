@@ -1,0 +1,115 @@
+/* portfolio */
+
+.portfolio {
+  border-top: 1px solid #ececec;
+}
+.portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.portfolio-nav__button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: $font-size-secondary;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: $letter-spacing-primary;
+  color: $color-text-primary;
+  background-color: #f5f4fa;
+  cursor: pointer;
+  border: transparent;
+  padding: 6px 22px;
+  border-radius: $border-radius-primary;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: $transition-duration-primary;
+  transition-timing-function: $transition-timing-function-primary;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+.portfolio-gallery__item {
+  flex-basis: calc(100% / 3 - 30px);
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition-property: box-shadow;
+  transition-duration: $transition-duration-primary;
+  transition-timing-function: $transition-timing-function-primary;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .portfolio-overlay {
+    transform: translateY(0);
+  }
+}
+.portfolio-article {
+  &__photo {
+    position: relative;
+    overflow: hidden;
+  }
+  &__descr {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+  }
+  &__type {
+    font-size: $font-size-secondary;
+    line-height: calc(30 / 16);
+    letter-spacing: $letter-spacing-primary;
+    color: $color-text-secondary;
+  }
+}
+
+.portfolio-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition-property: transform;
+  transition-duration: $transition-duration-primary;
+  transition-timing-function: $transition-timing-function-primary;
+  transform: translateY(100%);
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 322px;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: $letter-spacing-primary;
+    color: #ffffff;
+  }
+}
