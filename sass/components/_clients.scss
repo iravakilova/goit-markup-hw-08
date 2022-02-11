@@ -1,5 +1,11 @@
 /* clients */
 
+.clients-container {
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    width: 100%;
+    padding: 0;
+  }
+}
 .clients-list {
   display: flex;
   justify-content: center;
@@ -8,13 +14,25 @@
     width: 106px;
     height: 60px;
   }
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-top: -15px;
+    margin-bottom: -15px;
+  }
 }
 .clients-list__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  &:not(:last-child) {
-    margin-right: 30px;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 15px;
+  }
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
   }
 }
 .clients-list__link {
@@ -33,5 +51,8 @@
   &:focus {
     border: 1px solid $accent-color;
     fill: $accent-color;
+  }
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    width: 100%;
   }
 }

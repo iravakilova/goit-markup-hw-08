@@ -8,6 +8,10 @@
     display: flex;
     justify-content: start;
     align-items: baseline;
+    @media screen and (min-width: 320px) and (max-width: $mobile) {
+      display: block;
+      text-align: center;
+    }
   }
   &__text {
     font-weight: 700;
@@ -27,12 +31,18 @@
   line-height: calc(31 / 26);
   letter-spacing: $letter-spacing-primary;
   color: #ffffff;
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
   &--part {
     color: #2196f3;
   }
 }
-
 .footer-contact {
+  margin-bottom: 60px;
+}
+.footer-list {
   font-style: normal;
   margin-top: 20px;
   &__item:not(:first-child) {
@@ -55,6 +65,10 @@
 
 .footer-connect {
   margin-left: 70px;
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
 }
 .footer-social {
   display: flex;
@@ -69,9 +83,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 320px) and (max-width: $mobile) {
+      display: inline-block;
+    }
   }
   &__icon:not(:last-child) {
     margin-right: 10px;
+  }
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    display: block;
   }
 }
 .footer-social__link {
@@ -108,6 +128,11 @@
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
     outline: none;
+    @media screen and (min-width: 320px) and (max-width: $mobile) {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
   }
   &__button {
     width: 200px;
@@ -128,5 +153,9 @@
     fill: #ffffff;
     vertical-align: middle;
     margin-left: 10px;
+  }
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    margin-left: 0px;
+    margin-bottom: 60px;
   }
 }

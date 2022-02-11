@@ -14,6 +14,10 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .container {
   width: $width-container;
@@ -21,6 +25,9 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    width: 100%;
+  }
 }
 .primary-title {
   font-weight: 700;
@@ -29,6 +36,11 @@ img {
   text-align: center;
   letter-spacing: $letter-spacing-primary;
   margin-bottom: 50px;
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    font-size: 28px;
+    line-height: calc(32 / 28);
+    margin-bottom: 30px;
+  }
 }
 .backdrop {
   position: fixed;

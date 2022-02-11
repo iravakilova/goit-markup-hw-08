@@ -19,6 +19,9 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 93px;
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    display: none;
+  }
   &__item {
     position: relative;
   }
@@ -48,6 +51,9 @@
 .header-contact {
   display: flex;
   margin-left: auto;
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    display: none;
+  }
   &__item:last-child {
     margin-left: 30px;
   }
