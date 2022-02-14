@@ -12,6 +12,12 @@
       display: block;
       text-align: center;
     }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: start;
+    }
   }
   &__text {
     font-weight: 700;
@@ -22,8 +28,16 @@
     color: #ffffff;
     margin-bottom: 20px;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    text-align: center;
+  }
 }
-
+.footer-online {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -38,9 +52,17 @@
   &--part {
     color: #2196f3;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: block;
+    text-align: center;
+  }
 }
 .footer-contact {
   margin-bottom: 60px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 .footer-list {
   font-style: normal;
@@ -68,6 +90,9 @@
   @media screen and (min-width: 320px) and (max-width: $mobile) {
     margin-left: 0px;
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-left: 0px;
   }
 }
 .footer-social {
@@ -133,6 +158,12 @@
       margin-right: 0px;
       margin-bottom: 20px;
     }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      display: block;
+      max-width: 450px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
   }
   &__button {
     width: 200px;
@@ -157,5 +188,8 @@
   @media screen and (min-width: 320px) and (max-width: $mobile) {
     margin-left: 0px;
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-left: 0;
   }
 }

@@ -18,6 +18,10 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .container {
   width: $width-container;
@@ -26,6 +30,9 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   @media screen and (min-width: 320px) and (max-width: $mobile) {
+    width: 100%;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     width: 100%;
   }
 }
