@@ -101,9 +101,11 @@
   &__img {
     @media screen and (min-width: 320px) and (max-width: $mobile) {
       width: 100%;
-      max-width: 450px;
       height: auto;
-      margin-right: 0;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      width: 100%;
+      height: auto;
     }
   }
   &__descr {
@@ -152,6 +154,9 @@
     color: #ffffff;
     @media screen and (min-width: 320px) and (max-width: $mobile) {
       flex-basis: 402px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      flex-basis: 306px;
     }
   }
 }

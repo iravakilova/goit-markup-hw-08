@@ -19,14 +19,18 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 93px;
-  @media screen and (min-width: 320px) and (max-width: $mobile) {
-    display: none;
-  }
+
   &__item {
     position: relative;
   }
   &__item:not(:last-child) {
     margin-right: 50px;
+  }
+  @media screen and (min-width: 320px) and (max-width: $mobile) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-left: 88px;
   }
 }
 
@@ -51,14 +55,25 @@
 .header-contact {
   display: flex;
   margin-left: auto;
+  &__icon {
+    margin-right: 10px;
+  }
   @media screen and (min-width: 320px) and (max-width: $mobile) {
     display: none;
   }
-  &__item:last-child {
-    margin-left: 30px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
-  &__icon {
-    margin-right: 10px;
+}
+.header-contact__item {
+  &:last-child {
+    margin-left: 30px;
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      margin-left: 0;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -66,6 +81,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  font-size: $font-size-primary;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: $color-text-secondary;
   fill: $color-text-secondary;
   transition-property: color, fill;
@@ -75,6 +96,9 @@
   &:focus {
     color: $accent-color;
     fill: $accent-color;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    padding: 0;
   }
 }
 
