@@ -3,11 +3,19 @@
 .features {
   padding-bottom: 0;
   @media screen and (min-width: 320px) and (max-width: $mobile) {
+    width: 100%;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop){
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 60px;
+  }  
 }
 .features-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin-right: -30px;
   &__logo {
@@ -38,7 +46,12 @@
     color: $color-text-secondary;
   }
   @media screen and (min-width: 320px) and (max-width: $mobile) {
-    display: block;
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop){
+    flex-basis: 100%;
+    margin-right: -30px;
   }
 }
 
@@ -49,16 +62,15 @@
   &:last-child {
     margin-right: 0px;
     @media screen and (min-width: 320px) and (max-width: $mobile) {
-      margin-right: 0;
       margin-bottom: 0;
     }
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
-      margin-right: 0;
-      margin-bottom: 0;
+      margin-right: 30px;
     }
   }
-  @media screen and (min-width: 320px) and (max-width: $mobile) {
-    margin-right: 0;
+  @media screen and (min-width: 320px) and (max-width: $mobile){
+    flex-basis: 100%;
+    margin-right: 0px;
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     flex-basis: calc(100% / 2 - 30px);
