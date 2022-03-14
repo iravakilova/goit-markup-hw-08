@@ -1,7 +1,7 @@
 /* modal window */
 
 .modal {
-  min-width: 528px;
+  max-width: 528px;
   min-height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -15,6 +15,10 @@
   transition-property: all;
   transition-duration: $transition-duration-primary;
   transition-timing-function: $transition-timing-function-primary;
+  @media screen and (min-width: 320px) and (max-width: $desktop){
+    max-width: 450px;
+    height: auto;
+  }
 }
 .modal-close__button {
   width: 30px;
@@ -78,6 +82,9 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+  @media screen and (min-width: 320px) and (max-width: $desktop){
+    width: 370px;
+  }
 }
 .modal-data__input {
   display: block;
@@ -100,6 +107,9 @@
   }
   &:focus ~ .modal-data__icon {
     fill: $accent-color;
+  }
+  @media screen and (min-width: 320px) and (max-width: $desktop){
+    width: 370px;
   }
 }
 .modal-data {
@@ -142,6 +152,10 @@
     fill: #ffffff;
     position: absolute;
     z-index: 1;
+  }
+  @media screen and (min-width: 320px) and (max-width: $desktop){
+    font-size: 12px;
+    margin-left: 0;
   }
 }
 .modal-checkbox__input {
