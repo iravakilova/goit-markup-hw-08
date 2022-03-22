@@ -5,6 +5,9 @@
   @media screen and (min-width: 320px) and (max-width: $mobile) {
     width: 100%;
   }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
+    width: 100%;
+  }
   @media screen and (min-width: $tablet) and (max-width: $desktop){
     width: 100%;
     overflow-x: hidden;
@@ -19,6 +22,10 @@
     margin-right: 8px;
   }
   @media screen and (min-width: 320px) and (max-width: $mobile) {
+    justify-content: start;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
     justify-content: start;
     margin-bottom: 40px;
   }
@@ -49,6 +56,9 @@
   @media screen and (min-width: 320px) and (max-width: $mobile) {
     margin-bottom: 15px;
   }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
+    margin-bottom: 15px;
+  }
 }
 .portfolio-gallery {
   display: flex;
@@ -56,6 +66,11 @@
   margin-right: -30px;
   @media screen and (min-width: 320px) and (max-width: $mobile) {
     margin-right: 0;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
+    flex-basis: 100%;
+    margin: 0 auto;
+    justify-content: center;
   }
 }
 .portfolio-gallery__item {
@@ -69,6 +84,9 @@
   &:nth-last-child(-n + 3) {
     margin-bottom: 0px;
     @media screen and (min-width: 320px) and (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
       margin-bottom: 30px;
     }
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
@@ -90,6 +108,11 @@
     width: 100%;
     margin-right: -30px;
   }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
+    width: 100%;
+    max-width: 450px;
+    margin-right: 0px;
+  }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     width: calc(100% / 2 - 30px);
   }
@@ -101,6 +124,10 @@
   }
   &__img {
     @media screen and (min-width: 320px) and (max-width: $mobile) {
+      width: 100%;
+      height: auto;
+    }
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
       width: 100%;
       height: auto;
     }
@@ -154,6 +181,9 @@
     letter-spacing: $letter-spacing-primary;
     color: #ffffff;
     @media screen and (min-width: 320px) and (max-width: $mobile) {
+      flex-basis: 402px;
+    }
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
       flex-basis: 402px;
     }
     @media screen and (min-width: $tablet) and (max-width: $desktop) {

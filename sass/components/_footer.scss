@@ -12,6 +12,10 @@
       display: block;
       text-align: center;
     }
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
+      display: block;
+      text-align: center;
+    }
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
       display: block;
     }
@@ -38,6 +42,10 @@
     flex-direction: column;
     align-items: center;
   }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
+    flex-direction: column;
+    align-items: center;
+  }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     display: flex;
     justify-content: center;
@@ -59,6 +67,10 @@
     font-size: 24px;
     line-height: calc(28 / 24);
   }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     display: block;
     text-align: center;
@@ -66,6 +78,9 @@
 }
 .footer-contact {
   @media screen and (min-width: 320px) and (max-width: $mobile){
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
     margin-bottom: 60px;
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
@@ -101,6 +116,10 @@
     margin-left: 0px;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     margin-left: 0px;
   }
@@ -121,11 +140,17 @@
     @media screen and (min-width: 320px) and (max-width: $mobile) {
       display: inline-block;
     }
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
+      display: inline-block;
+    }
   }
   &__icon:not(:last-child) {
     margin-right: 10px;
   }
   @media screen and (min-width: 320px) and (max-width: $mobile) {
+    display: block;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
     display: block;
   }
 }
@@ -168,6 +193,13 @@
       margin-right: 0px;
       margin-bottom: 20px;
     }
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
+      width: 100%;
+      max-width: 450px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
       display: block;
       max-width: 450px;
@@ -195,6 +227,9 @@
     margin-left: 10px;
   }
   @media screen and (min-width: 320px) and (max-width: $mobile) {
+    margin-left: 0px;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
     margin-left: 0px;
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {

@@ -16,6 +16,7 @@
   transition-duration: $transition-duration-primary;
   transition-timing-function: $transition-timing-function-primary;
   @media screen and (min-width: 320px) and (max-width: $desktop){
+    width: 100%;
     max-width: 450px;
     height: auto;
   }
@@ -83,7 +84,8 @@
     margin-bottom: 10px;
   }
   @media screen and (min-width: 320px) and (max-width: $desktop){
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
   }
 }
 .modal-data__input {
@@ -109,7 +111,8 @@
     fill: $accent-color;
   }
   @media screen and (min-width: 320px) and (max-width: $desktop){
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
   }
 }
 .modal-data {

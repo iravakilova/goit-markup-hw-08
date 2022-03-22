@@ -6,6 +6,10 @@
     width: 100%;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
+    width: 100%;
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: $tablet) and (max-width: $desktop){
     width: 100%;
     overflow-x: hidden;
@@ -15,7 +19,6 @@
 .features-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   margin-right: -30px;
   &__logo {
@@ -26,6 +29,9 @@
     background: #f5f4fa;
     border-radius: $border-radius-primary;
     margin-bottom: 30px;
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
+      margin: 0 auto 30px;
+    }
   }
   &__icon {
     width: 70px;
@@ -38,7 +44,10 @@
     letter-spacing: $letter-spacing-primary;
     text-transform: uppercase;
     margin-bottom: 10px;
-    @media screen and (min-width: 320px) and (max-width: $mobile){
+    @media screen and (min-width: 320px) and (max-width: $mobile) {
+      text-align: center;
+    }
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
       text-align: center;
     }
   }
@@ -49,6 +58,10 @@
     color: $color-text-secondary;
   }
   @media screen and (min-width: 320px) and (max-width: $mobile) {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
     flex-basis: 100%;
     margin-right: 0;
   }
@@ -67,12 +80,19 @@
     @media screen and (min-width: 320px) and (max-width: $mobile) {
       margin-bottom: 0;
     }
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
+      margin-bottom: 0;
+    }
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
       margin-right: 30px;
     }
   }
   @media screen and (min-width: 320px) and (max-width: $mobile){
     flex-basis: 100%;
+    margin-right: 0px;
+  }
+  @media screen and (min-width: $mobile) and (max-width: $tablet){
+    flex-basis: 450px;
     margin-right: 0px;
   }
   @media screen and (min-width: $tablet) and (max-width: $desktop) {

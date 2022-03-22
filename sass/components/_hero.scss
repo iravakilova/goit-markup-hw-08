@@ -80,6 +80,12 @@
       font-size: 26px;
       line-height: calc(42 / 26);
     }
+    @media screen and (min-width: $mobile) and (max-width: $tablet){
+      width: 100%;
+      max-width: 360px;
+      font-size: 26px;
+      line-height: calc(42 / 26);
+    }
   }
 }
 .hero__button {
